@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<!-- Как-то наверх запихнуть логотип компании-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo"></a>
+			<ul class="user-navigation">
+				<li class="login-link">Войти</li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
+			</ul>
+			<!--Слайдер-->
+			<ul class="site-navigation">
+				<li><a href="catalog.html">Каталог</a></li>
+				<!--Нужно добавть +-->
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#warranty">Гарантия</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="products">
+		<ul>
+			<li>Виртуальная реальность</li>
+			<li><a href="selfie.html">Моноподы для селфи</a></li>
+			<li>Экшн-камеры</li>
+			<li>Фитнес-браслеты</li>
+			<li>Умные часы</li>
+			<li>Квадрокоптеры</li>
+		</ul>
+	</section>
+	<section class="features-list">
+		<ul>
+			<li id="delivery">
+				<h3>Доставка</h3>
+			</li>
+			<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+				заработаем, поднимая его на ваш этаж. </p>
+			<!-- Возможно гарантия и кредит тоже сделть кнопками-->
+			<li class="warranty">
+				<h3>Гарантия</h3>
+			</li>
+			<li class="credit">
+				<h3>Кредит</h3>
+			</li>
+		</ul>
+	</section>
+	<!-- Квадратики с логотипами-->
+	<section class="information">
+		<h3>О нас</h3>
+		<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+		<p>Мы можем доставить ваш товар в самый отдаленные точки России! Device работает со многими траспортными
+			компаниями:
+			<br><b>Деловые Линии</b>
+			<br><b>Автотрендинг</b>
+			<br><b>ЖелДорЭкспедиция</b>
+		</p>
+		<a class="button" href="detailed">
+			<h4>Подробнее о нас</h4>
+		</a>
+	</section>
+	<section class="contacts" id="contacts">
+		<h3>Контакты</h3>
+		<p>Вы можете забрать свой товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+			Всякое бывает.</p>
+		<!-- Картинка карты-->
+		<a class="button" href="communication">
+			<h4>Напишите нам</h4>
+		</a>
+	</section>
 </body>
+<footer>
+	<!-- Картинка компании-->
+	<p class="contacts">г.Москва, ул.Строителей, 15
+		<br>+7(495)495-95-95
+	</p>
+	<ul class="user-navigation">
+		<li class="login-link">Войти</li>
+		<li><a href="compare.html">Сравнить</a></li>
+		<li><a href="basket.html">Корзина</a></li>
+	</ul>
+	<a href="#delivery">
+		<h4>Доставка</h4>
+	</a>
+	<a href="#warranty">
+		<h4>Гарантия</h4>
+	</a>
+	<a href="#contacts">
+		<h4>Контакты</h4>
+	</a>
+	<!-- Кнопки на соц сети и внизу логотип-->
+</footer>
 
 </html>
