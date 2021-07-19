@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo">Device</a>
+			<ul class="user-navigation">
+				<li class="login-link"><button>Валентин Петухов</button><button>Выйти</button></li>
+
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
+			</ul>
+			<ul class="site-navigation">
+				<li><a href="catalog.html">Каталог <span>+</span></a></li>
+				<li><a href=index.html#delivery">Доставка</a></li>
+				<li><a href="index.html#warranty">Гарантия</a></li>
+				<li><a href="index.html#contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1 class="page-title">Моноподы для селфи</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог товаров</a></li>
+			<li class="breadcrumbs-current">Моноподы для селфи</li>
+		</ul>
+		<section class="filters">
+			<ul>
+				<h3 class="visually-hidden">Фильтр:</h3>
+				<!-- Как-то нужно сделать от 0 до 10000 штуку, которая движется по цене -->
+				<li class="cost">
+					<h4>Стоимость</h4>
+				</li>
+				<li class="list-colors">
+					<h4>Цвет</h4>
+					<ul>
+						<!-- Чёрный, синий и красный стоят галочки в квадратиках -->
+						<li>Чёрный</li>
+						<li>Белый</li>
+						<li>Синий</li>
+						<li>Красный</li>
+						<li>Розовый</li>
+					</ul>
+				</li>
+				<li class="bluetooth">
+					<h4>Bluetooth</h4>
+					<ul>
+						<!-- В кружке должна стоять точка в пункте есть -->
+						<li>Есть</li>
+						<li>Нет</li>
+					</ul>
+				</li>
+			</ul>
+			<button>Показать</button>
+		</section>
+		<section class="sorting">
+			<ul>
+				<!-- там слева ещё нужно сделать стрелки вверх и вниз -->
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По популярности</li>
+			</ul>
+		</section>
+		<section class="catalog-selfie">
+			<ul>
+				<li><a href="#">
+						<figure><img atl="Любительская селфи-палка">
+							<figcaption>
+								Любительская селфи-палка
+							</figcaption>
+						</figure>
+					</a>
+					<p class="item-price">500 руб.</p>
+				</li>
+				<li><a href="#">
+						<figure><img alt="Профессиональная селфи-палка">
+							<figcaption>
+								Профессиональная<br>селфи-палка
+							</figcaption>
+						</figure>
+					</a>
+					<p class="item-price">1500 руб.</p>
+				</li>
+				<li><a href="#">
+						<figure><img alt="Непотопляемая селфи-палка">
+							<figcaption>
+								Непотопляемая селфи-палка
+							</figcaption>
+						</figure>
+
+
+					</a>
+					<p class="item-price">2500 руб.</p>
+				</li>
+				<li><a href="#">
+						<figure><img alt="Рука для селфи">
+							<figcaption>Рука для селфи</figcaption>
+						</figure>
+
+
+					</a>
+					<p class="item-price">4900 руб.</p>
+				</li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item pagination-item-current"><a>1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li><button class="back">назад</button></li>
+				<li><button class="forward">вперёд</button></li>
+			</ul>
+
+		</section>
+	</main>
+	<footer>
+		<a class="footer-logo">Device</a>
+		<p class="contacts">г.Москва, ул.Строителей, 15
+		</p>
+		<ul class="user-navigation">
+			<li class="login-link"><button>Валентин Петухов</button><button>Выйти</button></li>
+			<li><a href="compare.html">Сравнить</a></li>
+			<li><a href="basket.html">Корзина</a></li>
+		</ul>
+		<p>+7(495)495-95-95</p>
+		<nav>
+			<ul>
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#warranty">Гарантия</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+			<ul class="social">
+				<li><a href="#">Фейсбук</a></li>
+				<li><a href="#">Инстаграм</a></li>
+				<li><a href="#">Твиттер</a></li>
+			</ul>
+		</nav>
+		<a href="#"><img alt="Логотип компании разработчика"></a>
+	</footer>
+</body>
+
+</html>
