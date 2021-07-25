@@ -20,7 +20,7 @@
 				<li><a href="basket.html">Корзина</a></li>
 			</ul>
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог</a>
+				<li><a href="catalog.html">Каталог<button><img src="svg/plus.svg" alt="Плюсик"></button></a>
 					<ul class="catalog-menu">
 						<li><a class="vr" href="vr.html"></a></li>
 						<li><a class="monopods" href="monopods.html"></a></li>
@@ -81,22 +81,22 @@
 	<section class="products">
 		<h2 class="visually-hidden">Перечень товаров</h2>
 		<ul>
-			<li><a href="vr">
+			<li><a href="vr.html">
 					<figure>
 						<figcaption>Виртуальная реальность</figcaption>
 					</figure>
 				</a></li>
-			<li><a href="monopods">
+			<li><a href="monopods.html">
 					<figure>
 						<figcaption>Моноподы для селфи</figcaption>
 					</figure>
 				</a></li>
-			<li><a href="action-camera">
+			<li><a href="action-camera.html">
 					<figure>
 						<figcaption>Экшн-камеры</figcaption>
 					</figure>
 				</a></li>
-			<li><a href="fitness-braclete">
+			<li><a href="fitness-braclete.html">
 					<figure>
 						<figcaption>Фитнес-браслеты</figcaption>
 					</figure>
@@ -172,7 +172,7 @@
 			работоспособность покупки.
 			Всякое бывает.</p>
 		<img src="img/map.png" alt="г.Москва, ул.Строителей, 15">
-		<a class="button" href="communication.html">Напишите нам</a>
+		<button>Напишите нам</button>
 	</section>
 	<footer>
 		<a class="footer-logo"><img src="img/logo-yellow.png" alt="Логотип"></a>
@@ -200,6 +200,7 @@
 			<img src="svg/logo-html.svg" alt="Логотип компании разработчика"></a>
 	</footer>
 	<article>
+		<h2 class="visually-hidden">Обратная связь</h2>
 		<form class="communication-form" action="#" method="POST">
 			<label>Ваше имя:
 				<input type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -215,9 +216,11 @@
 		</form>
 	</article>
 	<article>
-		<img class="map-big" src="img/map-big.png" alt="г.Москва, ул.Строителей, 15">
-		<button class="modal-close"></button>
+		<div><img class="map-big" src="img/map-big.png" alt="г.Москва, ул.Строителей, 15">
+			<button class="modal-close"></button>
+		</div>
 	</article>
+	<h2 class="visually-hidden">Авторизация</h2>
 	<form class="login-form" action="#" method="POST">
 		<label>Ваш логин:
 			<input type="text" name="login" placeholder="Логин">
