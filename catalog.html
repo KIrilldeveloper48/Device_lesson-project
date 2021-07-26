@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Каталог</title>
 </head>
 
@@ -13,15 +14,24 @@
 		<nav class="main-navigation">
 			<a class="main-header-logo"><img src="svg/logo.svg" alt="Логотип">Device</a>
 			<ul class="user-navigation">
-				<li><img src="svg/search.svg" alt="Поиск"></li>
-				<li class="login-link"><img src="svg/user.svg" alt="Юзер"><button>Валентин
+				<li><input type="search" placeholder="Поиск по сайту"></li>
+				<li class="login-link"><button>Валентин
 						Петухов</button><button>Выйти</button>
 				</li>
-				<li><a href="compare.html"><img src="svg/compare.svg" alt="Сравнение">Сравнить</a></li>
-				<li><a href="basket.html"><img src="svg/cart.svg" alt="Корзина">Корзина</a></li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
 			</ul>
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог <span><img src="svg/plus.svg" alt="Плюсик"></span></a></li>
+				<li><a href="catalog.html">Каталог <button><img src="svg/plus.svg" alt="Плюсик"></button></a>
+					<ul class="catalog-menu">
+						<li><a class="vr" href="vr.html"></a></li>
+						<li><a class="monopods" href="monopods.html"></a></li>
+						<li><a class="action-camera" href="action-camera.html"></a></li>
+						<li><a class="fitness-braclete" href="fitness-braclete.html"></a></li>
+						<li><a class="smart-watch" href="smart-watch.html"></a></li>
+						<li><a class="quadrocopters" href="quadrocopter.html"></a></li>
+					</ul>
+				</li>
 				<li><a href="index.html#delivery">Доставка</a></li>
 				<li><a href="index.html#warranty">Гарантия</a></li>
 				<li><a href="index.html#contacts">Контакты</a></li>
@@ -31,48 +41,66 @@
 	<main>
 		<h1 class="page-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a><img src="svg/nav-arrow.svg" alt="Стрелка вправо"></li>
-			<li><a href="catalog.html">Каталог товаров</a><img src="svg/nav-arrow.svg" alt="Стрелка вправо"></li>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог товаров</a></li>
 			<li class="breadcrumbs-current">Моноподы для селфи</li>
 		</ul>
 		<section class="filters">
-			<h2>Фильтр:</h2>
-			<ul>
-				<li class="cost">
-					<h4>Стоимость</h4>
-					<button><img src="svg/filter-button.svg" alt="Кнопка фильтра"></button>
-					<button><img src="svg/filter-button.svg" alt="Кнопка фильтра"></button>
-				</li>
-				<li class="list-colors">
-					<h4>Цвет</h4>
+			<h3>Фильтр:</h3>
+			<form class="filter" method="GET" action="#">
+				<fieldset>
+					<legend>Стоимость</legend>
+					<input type="range" min="0" max="10000">
+				</fieldset>
+				<fieldset>
+					<legend>Цвет</legend>
 					<ul>
-						<li><img src="svg/checkbox-on.svg" alt="Кнопка включена">Чёрный</li>
-						<li><img src="svg/checkbox-off.svg" alt="Кнопка выключена">Белый</li>
-						<li><img src="svg/checkbox-on.svg" alt="Кнопка включена">Синий</li>
-						<li><img src="svg/checkbox-on.svg" alt="Кнопка включена">Красный</li>
-						<li><img src="svg/checkbox-off.svg" alt="Кнопка выключена">Розовый</li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="black" id="filter-black" checked>
+							<label for="filter-black">Чёрный</label>
+						</li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="white" id="filter-white">
+							<label for="filter-white">Белый</label>
+						</li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="blue" id="filter-blue" checked>
+							<label for="filter-blue">Синий</label>
+						</li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="red" id="filter-red" checked>
+							<label for="filter-red">Красный</label>
+						</li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="rose" id="filter-rose">
+							<label for="filter-rose">Розовый</label>
+						</li>
 					</ul>
-				</li>
-				<li class="bluetooth">
-					<h4>Bluetooth</h4>
-					<ul>
-						<li><img src="svg/radio-on.svg" alt="Кнопка включена">Есть</li>
-						<li><img src="svg/radio-off.svg" alt="Кнопка выключена">Нет</li>
-					</ul>
-				</li>
-			</ul>
-			<button>Показать</button>
+				</fieldset>
+				<fieldset>
+					<legend>Bluetooth</legend>
+					<input class="visually-hidden filter-input filter-input-bluetooth" type="radio" name="be"
+						id="bluetooth-be" checked>
+					<label for="bluetooth-be">Есть</label>
+					<input class="visually-hidden filter-input filter-input-bluetooth" type="radio" name="no"
+						id="bluetooth-no">
+					<label for="bluetooth-no">Нет</label>
+				</fieldset>
+				<button type="submit" class="filter-button button">Показать</button>
+			</form>
 		</section>
 		<section class="sorting">
+			<h3>Сортировка:</h3>
 			<ul>
 				<li><button>По цене</button></li>
 				<li><button>По типу</button></li>
 				<li><button>По популярности</button></li>
-				<li><button><img src="svg/icon-up-dir.svg" alt="Стрелка вверх"></button></li>
-				<li><button><img src="svg/icon-down-dir.svg" alt="Стрелка вниз"></button></li>
 			</ul>
+			<input type="radio">
+			<input type="radio">
 		</section>
 		<section class="catalog-selfie">
+			<h2 class="visually-hidden">Каталог моноподов для селфи</h2>
 			<ul>
 				<li><a href="#">
 						<figure><img src="img/item-1.jpg" alt="Cелфи-палка">
@@ -98,8 +126,6 @@
 								Непотопляемая селфи-палка
 							</figcaption>
 						</figure>
-
-
 					</a>
 					<p class="item-price">2500 руб.</p>
 				</li>
@@ -107,8 +133,6 @@
 						<figure><img src="img/item-4.jpg" alt="Рука для селфи">
 							<figcaption>Рука для селфи</figcaption>
 						</figure>
-
-
 					</a>
 					<p class="item-price">4900 руб.</p>
 				</li>
@@ -128,11 +152,10 @@
 		</p>
 		<ul class="user-navigation">
 			<li class="login-link">
-				<img src="svg/user.svg" alt="Войти">
 				<button>Валентин Петухов</button><button>Выйти</button>
 			</li>
-			<li><a href="compare.html"><img src="svg/compare.svg" alt="Сравнить">Сравнить</a></li>
-			<li><a href="basket.html"><img src="svg/cart.svg" alt="Корзина">Корзина</a></li>
+			<li><a href="compare.html">Сравнить</a></li>
+			<li><a href="basket.html">Корзина</a></li>
 		</ul>
 		<p>+7(495)495-95-95</p>
 		<nav>
@@ -150,6 +173,7 @@
 
 		<a href="#"><img src="svg/logo-html.svg" alt="Логотип компании разработчика"></a>
 	</footer>
+	
 </body>
 
 </html>
