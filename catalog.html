@@ -5,14 +5,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Каталог</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/catalog.css" rel="stylesheet">
 </head>
 
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo"><img src="svg/logo.svg" alt="Логотип">Device</a>
+			<a class="main-header-logo"><img src="asset/svg/logo.svg" alt="Логотип">Device</a>
 			<ul class="user-navigation">
 				<li><input type="search" placeholder="Поиск по сайту"></li>
 				<li class="login-link"><button>Валентин
@@ -22,7 +25,8 @@
 				<li><a href="basket.html">Корзина</a></li>
 			</ul>
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог <button><img src="svg/plus.svg" alt="Плюсик"></button></a>
+				<li><a href="catalog.html" class="btn">Каталог</a><button><img src="asset/svg/plus.svg"
+							alt="Плюсик"></button>
 					<ul class="catalog-menu">
 						<li><a class="vr" href="vr.html"></a></li>
 						<li><a class="monopods" href="monopods.html"></a></li>
@@ -32,9 +36,9 @@
 						<li><a class="quadrocopters" href="quadrocopter.html"></a></li>
 					</ul>
 				</li>
-				<li><a href="index.html#delivery">Доставка</a></li>
-				<li><a href="index.html#warranty">Гарантия</a></li>
-				<li><a href="index.html#contacts">Контакты</a></li>
+				<li><a href="index.html#delivery" class="btn">Доставка</a></li>
+				<li><a href="index.html#warranty" class="btn">Гарантия</a></li>
+				<li><a href="index.html#contacts" class="btn">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -49,11 +53,11 @@
 			<h3>Фильтр:</h3>
 			<form class="filter" method="GET" action="#">
 				<fieldset>
-					<legend>Стоимость</legend>
+					<legend class="btn">Стоимость</legend>
 					<input type="range" min="0" max="10000">
 				</fieldset>
 				<fieldset>
-					<legend>Цвет</legend>
+					<legend class="btn">Цвет</legend>
 					<ul>
 						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
 								type="checkbox" name="black" id="filter-black" checked>
@@ -78,7 +82,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Bluetooth</legend>
+					<legend class="btn">Bluetooth</legend>
 					<input class="visually-hidden filter-input filter-input-bluetooth" type="radio" name="be"
 						id="bluetooth-be" checked>
 					<label for="bluetooth-be">Есть</label>
@@ -86,11 +90,11 @@
 						id="bluetooth-no">
 					<label for="bluetooth-no">Нет</label>
 				</fieldset>
-				<button type="submit" class="filter-button button">Показать</button>
+				<button type="submit" class="filter-button btn">Показать</button>
 			</form>
 		</section>
 		<section class="sorting">
-			<h3>Сортировка:</h3>
+			<h3 class="btn">Сортировка:</h3>
 			<ul>
 				<li><button>По цене</button></li>
 				<li><button>По типу</button></li>
@@ -103,8 +107,8 @@
 			<h2 class="visually-hidden">Каталог моноподов для селфи</h2>
 			<ul>
 				<li><a href="#">
-						<figure><img src="img/item-1.jpg" alt="Cелфи-палка">
-							<figcaption>
+						<figure><img src="asset/image/catalog-selfie/item-1.jpg" alt="Cелфи-палка">
+							<figcaption class="btn">
 								Любительская селфи-палка
 							</figcaption>
 						</figure>
@@ -112,8 +116,8 @@
 					<p class="item-price">500 руб.</p>
 				</li>
 				<li><a href="#">
-						<figure><img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
-							<figcaption>
+						<figure><img src="asset/image/catalog-selfie/item-2.jpg" alt="Профессиональная селфи-палка">
+							<figcaption class="btn">
 								Профессиональная<br>селфи-палка
 							</figcaption>
 						</figure>
@@ -121,8 +125,8 @@
 					<p class="item-price">1500 руб.</p>
 				</li>
 				<li><a href="#">
-						<figure><img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
-							<figcaption>
+						<figure><img src="asset/image/catalog-selfie//item-3.jpg" alt="Непотопляемая селфи-палка">
+							<figcaption class="btn">
 								Непотопляемая селфи-палка
 							</figcaption>
 						</figure>
@@ -130,24 +134,24 @@
 					<p class="item-price">2500 руб.</p>
 				</li>
 				<li><a href="#">
-						<figure><img src="img/item-4.jpg" alt="Рука для селфи">
-							<figcaption>Рука для селфи</figcaption>
+						<figure><img src="asset/image/catalog-selfie//item-4.jpg" alt="Рука для селфи">
+							<figcaption class="btn">Рука для селфи</figcaption>
 						</figure>
 					</a>
 					<p class="item-price">4900 руб.</p>
 				</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-current"><a>1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li><button class="back">назад</button></li>
-				<li><button class="forward">вперёд</button></li>
+				<li class="pagination-item pagination-item-current"><a class="btn">1</a></li>
+				<li class="pagination-item"><a href="#" class="btn">2</a></li>
+				<li class="pagination-item"><a href="#" class="btn">3</a></li>
+				<li><button class="back btn">назад</button></li>
+				<li><button class="forward btn">вперёд</button></li>
 			</ul>
 		</section>
 	</main>
 	<footer>
-		<a class="footer-logo"><img src="svg/logo.svg" alt="Логотип"></a>
+		<a class="footer-logo"><img src="asset/svg/logo.svg" alt="Логотип"></a>
 		<p class="contacts">г.Москва, ул.Строителей, 15
 		</p>
 		<ul class="user-navigation">
@@ -160,20 +164,20 @@
 		<p>+7(495)495-95-95</p>
 		<nav>
 			<ul>
-				<li><a href="index.html#delivery">Доставка</a></li>
-				<li><a href="index.html#warranty">Гарантия</a></li>
-				<li><a href="index.html#contacts">Контакты</a></li>
+				<li><a href="index.html#delivery" class="btn">Доставка</a></li>
+				<li><a href="index.html#warranty" class="btn">Гарантия</a></li>
+				<li><a href="index.html#contacts" class="btn">Контакты</a></li>
 			</ul>
 		</nav>
 		<ul class="social">
-			<li><a href="#"><img src="svg/fb.svg" alt="Фейсбук"></a></li>
-			<li><a href="#"><img src="svg/vk.svg" alt="Вк (Интаграмм)"></a></li>
-			<li><a href="#"><img src="svg/twitter.svg" alt="Твиттер"></a></li>
+			<li><a href="#"><img src="asset/svg/fb.svg" alt="Фейсбук"></a></li>
+			<li><a href="#"><img src="asset/svg/vk.svg" alt="Вк (Интаграмм)"></a></li>
+			<li><a href="#"><img src="asset/svg/twitter.svg" alt="Твиттер"></a></li>
 		</ul>
 
-		<a href="#"><img src="svg/logo-html.svg" alt="Логотип компании разработчика"></a>
+		<a href="#"><img src="asset/svg/logo-html.svg" alt="Логотип компании разработчика"></a>
 	</footer>
-	
+
 </body>
 
 </html>
