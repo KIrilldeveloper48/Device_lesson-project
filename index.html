@@ -5,20 +5,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
 	<title>Device</title>
 </head>
 
 <body>
-
+	
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo"><img src="asset/image/logo/logo.png" alt="Логотип"></a>
 			<ul class="user-navigation">
-				<li><input type="search" placeholder="Поиск по сайту"></li>
+				<li class="nav-search-item" tabindex="0"><input class="search" type="search" placeholder="Поиск по сайту">
+				<button class="search-button">Найти</button>
+				</li>
 				<li><a class="login-link" href="login.html">Войти</a></li>
 				<li><a href="compare.html">Сравнить</a></li>
 				<li><a href="basket.html">Корзина</a></li>
@@ -42,12 +44,12 @@
 		</nav>
 	</header>
 	<main>
-		<h1 class="viseally-hidden">Самое главное в Device</h1>
+		<h1 class="visually-hidden">Самое главное в Device</h1>
 		<section class="slider">
 			<h2 class="visually-hidden">Слайдер со списком популярных товаров</h2>
 			<ul>
 				<li>
-					<h3 class="btn">Делай селфи, <br> как Бен Стиллер! </h3>
+					<h3>Делай селфи, <br> как Бен Стиллер! </h3>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и
 						весом
 						всего 5 килограмм.</p>
@@ -88,7 +90,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="products" class="btn">
+		<section class="products">
 			<h2 class="visually-hidden">Перечень товаров</h2>
 			<ul>
 				<li><a href="vr.html">
@@ -165,6 +167,7 @@
 				<li><img src="asset/image/partners/partner-4.png" alt="Логотип 4"></li>
 			</ul>
 		</section>
+		<div class="all-necessary">
 		<section class="information">
 			<h3>О нас</h3>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -186,6 +189,7 @@
 			<img src="asset/image/maps/map.png" alt="г.Москва, ул.Строителей, 15">
 			<button class="btn">Напишите нам</button>
 		</section>
+	</div>
 	</main>
 	<footer>
 		<a class="footer-logo"><img src="asset/image/logo/logo-yellow.png" alt="Логотип"></a>
@@ -199,9 +203,9 @@
 		<p>+7(495)495-95-95</p>
 		<nav>
 			<ul>
-				<li><a href="#delivery" class="btn">Доставка</a></li>
-				<li><a href="#warranty" class="btn">Гарантия</a></li>
-				<li><a href="#contacts" class="btn">Контакты</a></li>
+				<li><a href="#delivery" >Доставка</a></li>
+				<li><a href="#warranty">Гарантия</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 		<ul class="social">

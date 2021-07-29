@@ -1,0 +1,45 @@
+.main-header-logo:hover {
+	opacity: 60%;
+}
+.main-header-logo:active {
+	opacity: 30%;
+}
+.search::placeholder{
+	opacity: 30%;
+}
+.search:hover::placeholder {
+	opacity: 60%;
+}
+.search-button{
+	display: none;
+}
+.search-button:hover{
+	background-color:#000;
+	color:#fff
+}
+
+.search:focus+.search-button{
+	display: inline;
+}
+.search:focus::placeholder{
+opacity: 100%;
+}
+.search:active::placeholder {
+	opacity: 100%;
+}
+.catalog-menu {
+	font-family: "Gilroy", "Arial", sans-serif;
+	color: #000;
+}
+.user-navigation a:hover {
+	opacity: 60%;
+}
+.user-navigation a:active {
+	opacity: 30%;
+}
+.catalog-menu a:hover {
+	opacity: 60%;
+}
+.catalog-menu a:active {
+	opacity: 30%;
+}
