@@ -1,57 +1,52 @@
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("asset/fonts/gilroylight.woff2") format("woff2");
+	src: url("/../Device_lesson-project/asset/fonts/gilroylight.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("asset/fonts/gilroylight.woff") format("woff");
+	src: url("/../Device_lesson-project/asset/fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("asset/fonts/gilroyextrabold.woff2") format("woff2");
+	src: url("/../Device_lesson-project/asset/fonts/gilroyextrabold.woff2") format("woff2");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("asset/fonts/gilroyextrabold.woff") format("woff");
+	src: url("/../Device_lesson-project/asset/fonts/gilroyextrabold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans";
-	src: url("asset/fonts/opensans.woff2") format("woff2");
+	src: url("/../Device_lesson-project/asset/fonts/opensans.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans";
-	src: url("asset/fonts/opensans.woff") format("woff");
+	src: url("/../Device_lesson-project/asset/fonts/opensans.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans Light";
-	src: url("asset/fonts/opensanslight.woff2") format("woff2");
+	src: url("/../Device_lesson-project/asset/fonts/opensanslight.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans Light";
-	src: url("asset/fonts/opensanslight.woff") format("woff");
+	src: url("/../Device_lesson-project/asset/fonts/opensanslight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
-html {
-	padding-left: 140px;
-	padding-right: 140px;
-	padding-top: 40px;
-}
 body {
 	margin: 0;
 	padding: 0;
@@ -60,9 +55,62 @@ body {
 	line-height: 30px;
 	font-size: 15px;
 	color: #464646;
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-top: 40px;
 }
 
-.main-navigation {
+.nav-search-item::before {
+	content: "";
+	background-image: url("/../asset/svg/search.svg");
+	background-size: cover;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-color: #000;
+}
+.login-link::before {
+	content: "";
+	background-image: url("/../asset/svg/user.svg");
+	width: 13px;
+	height: 12px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
+.shape::before {
+	content: "";
+	background-image: url("/../asset/svg/shape.svg");
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
+.cart::before {
+	content: "";
+	background-image: url("/../asset/svg/cart.svg");
+	width: 12px;
+	height: 9px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
+
+li {
+	display: inline;
+}
+
+h3 {
+	font-family: "Gilroy";
+}
+
+.user-navigation {
+	font-family: "Open Sans Light";
+}
+
+ul {
+	list-style: none;
 }
 
 .btn {
@@ -80,7 +128,50 @@ a {
 	color: #000;
 }
 
-.btn:hover {
+footer {
+	background-color: #464646;
+	background-repeat: no-repeat;
+	background-size: 1440px 323px;
+	background-position: top center;
+	color: #fff;
+	list-style: none;
+}
+
+footer a {
+	color: #fff;
+}
+.footer-btn {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.login-link-footer::before {
+	content: "";
+	background-image: url("/../asset/svg/user.svg");
+	width: 13px;
+	height: 12px;
+	background-color: #ffc600;
+	display: inline-block;
+	background-size: cover;
+}
+.shape-footer::before {
+	content: "";
+	background-image: url("/../asset/svg/shape.svg");
+	width: 10px;
+	height: 10px;
+	background-color: #ffc600;
+	display: inline-block;
+	background-size: cover;
+}
+.cart-footer::before {
+	content: "";
+	background-image: url("/../asset/svg/cart.svg");
+	width: 12px;
+	height: 9px;
+	background-color: #ffc600;
+	display: inline-block;
+	background-size: cover;
 }
 
 .communication-form {

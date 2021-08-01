@@ -4,3 +4,48 @@ header {
 	background-position: top, center;
 	background-repeat: no-repeat;
 }
+
+.delivery-partners {
+	font-family: "Gilroy";
+}
+
+
+.features-list li {
+	display: block;
+}
+
+
+
+.delivery::after {
+	content: "";
+	background-image: url("/../asset/svg/delivery.svg");
+	width: 133px;
+	height: 159px;
+	top: 1232px;
+	left:1104px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
+.warranty::after {
+	content: "";
+	background-image: url("/../asset/svg/warranty.svg");
+	width: 133px;
+	height: 159px;
+	top: 1232px;
+	left:1104px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
+.credit::after {
+	content: "";
+	background-image: url("/../asset/svg/credit.svg");
+	width: 133px;
+	height: 159px;
+	top: 1232px;
+	left:1104px;
+	background-color: #000;
+	display: inline-block;
+	background-size: cover;
+}
