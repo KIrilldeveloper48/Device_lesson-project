@@ -4,48 +4,74 @@ header {
 	background-position: top, center;
 	background-repeat: no-repeat;
 }
+.catalog {
+	font-family: "Gilroy";
+	width: 244px;
+	height: 24px;
+}
+.delivery-navigation {
+	font-family: "Gilroy";
+	width: 151px;
+	height: 24px;
+}
+.warranty-navigation {
+	font-family: "Gilroy";
+	width: 139px;
+	height: 24px;
+}
+.contacts-navigation {
+	font-family: "Gilroy";
+	width: 147px;
+	height: 24px;
+}
+.products li{
+	font-family: "Gilroy";
+	display: inline-block;
+}
+.products-png {
+	width: 160px;
+	height: 160px;
+}
+
 
 .delivery-partners {
 	font-family: "Gilroy";
 }
 
 
-.features-list li {
-	display: block;
-}
-
-
 
 .delivery::after {
 	content: "";
-	background-image: url("/../asset/svg/delivery.svg");
+	background-image: url("../asset/svg/delivery.svg");
 	width: 133px;
 	height: 159px;
 	top: 1232px;
-	left:1104px;
-	background-color: #000;
+	left: 1104px;
 	display: inline-block;
 	background-size: cover;
 }
 .warranty::after {
 	content: "";
-	background-image: url("/../asset/svg/warranty.svg");
+	background-image: url("../asset/svg/warranty.svg");
 	width: 133px;
 	height: 159px;
-	top: 1232px;
-	left:1104px;
-	background-color: #000;
 	display: inline-block;
 	background-size: cover;
 }
 .credit::after {
 	content: "";
-	background-image: url("/../asset/svg/credit.svg");
+	background-image: url("../asset/svg/credit.svg");
 	width: 133px;
 	height: 159px;
-	top: 1232px;
-	left:1104px;
-	background-color: #000;
 	display: inline-block;
 	background-size: cover;
+}
+.features{
+	background-color: #E5E5E5;
+}
+.partners li {
+	display: inline-block;
+}
+.delivery-partners li {
+	display: block;
 }

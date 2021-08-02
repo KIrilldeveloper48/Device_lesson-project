@@ -1,48 +1,48 @@
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("/../Device_lesson-project/asset/fonts/gilroylight.woff2") format("woff2");
+	src: url("../asset/fonts/gilroylight.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("/../Device_lesson-project/asset/fonts/gilroylight.woff") format("woff");
+	src: url("../asset/fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("/../Device_lesson-project/asset/fonts/gilroyextrabold.woff2") format("woff2");
+	src: url("../asset/fonts/gilroyextrabold.woff2") format("woff2");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("/../Device_lesson-project/asset/fonts/gilroyextrabold.woff") format("woff");
+	src: url("../asset/fonts/gilroyextrabold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans";
-	src: url("/../Device_lesson-project/asset/fonts/opensans.woff2") format("woff2");
+	src: url("../asset/fonts/opensans.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans";
-	src: url("/../Device_lesson-project/asset/fonts/opensans.woff") format("woff");
+	src: url("../asset/fonts/opensans.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans Light";
-	src: url("/../Device_lesson-project/asset/fonts/opensanslight.woff2") format("woff2");
+	src: url("../asset/fonts/opensanslight.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Open Sans Light";
-	src: url("/../Device_lesson-project/asset/fonts/opensanslight.woff") format("woff");
+	src: url("../asset/fonts/opensanslight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
@@ -59,47 +59,88 @@ body {
 	padding-right: 140px;
 	padding-top: 40px;
 }
+.main-header-logo {
+	position: absolute;
+	width: 163px;
+	height: 35px;
+	top: 20px;
+	left: 100px;
+}
+.search{
+	position: absolute;
+	color:#000;
+	width: 138px; 
+	height: 30px;
+	top: 83px;
+	left: 238px; 
+	opacity: 30%;
+}
 
 .nav-search-item::before {
 	content: "";
-	background-image: url("/../asset/svg/search.svg");
+	background-image: url("../asset/svg/search.svg");
 	background-size: cover;
 	width: 10px;
 	height: 10px;
+	margin-bottom: -25px;
+	margin-left: 28px;
 	display: inline-block;
-	background-color: #000;
+	margin-right: 14px;
+}
+.login-link{
+	color:#000;
+	width: 72px; 
+	height: 30px;
+	top: 83px;
+	left: 767px; 
 }
 .login-link::before {
 	content: "";
-	background-image: url("/../asset/svg/user.svg");
-	width: 13px;
-	height: 12px;
-	background-color: #000;
+	background-image: url("../asset/svg/user.svg");
+	width: 10px;
+	height: 10px;
 	display: inline-block;
 	background-size: cover;
+	margin-right: 14px;
+}
+.shape{
+	position: absolute;
+	color:#000;
+	width: 99px; 
+	height: 30px;
+	top: 83px;
+	left: 1000px; 
+	margin-left: 50px;
 }
 .shape::before {
 	content: "";
-	background-image: url("/../asset/svg/shape.svg");
+	background-image: url("../asset/svg/shape.svg");
 	width: 10px;
 	height: 10px;
-	background-color: #000;
 	display: inline-block;
 	background-size: cover;
+	margin-right: 14px;
+}
+.cart {
+	position: absolute;
+	color:#000;
+	width: 88px; 
+	height: 30px;
+	top: 83px;
+	left: 1170px; 
+	margin-left: 34px;
 }
 .cart::before {
 	content: "";
-	background-image: url("/../asset/svg/cart.svg");
-	width: 12px;
-	height: 9px;
-	background-color: #000;
+	background-image: url("../asset/svg/cart.svg");
+	width: 10px;
+	height: 10px;
 	display: inline-block;
 	background-size: cover;
+	margin-right: 14px;
 }
 
-li {
-	display: inline;
-}
+
 
 h3 {
 	font-family: "Gilroy";
@@ -123,6 +164,8 @@ ul {
 
 a {
 	text-decoration: none;
+	list-style: none;
+	color:#000;
 }
 .user-navigation a {
 	color: #000;
@@ -135,10 +178,12 @@ footer {
 	background-position: top center;
 	color: #fff;
 	list-style: none;
+	
 }
 
 footer a {
 	color: #fff;
+	
 }
 .footer-btn {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -148,28 +193,28 @@ footer a {
 }
 .login-link-footer::before {
 	content: "";
-	background-image: url("/../asset/svg/user.svg");
+	background-image: url("../asset/svg/user.svg");
 	width: 13px;
 	height: 12px;
-	background-color: #ffc600;
+	color: #ffc600;
 	display: inline-block;
 	background-size: cover;
 }
 .shape-footer::before {
 	content: "";
-	background-image: url("/../asset/svg/shape.svg");
+	background-image: url("../asset/svg/shape.svg");
 	width: 10px;
 	height: 10px;
-	background-color: #ffc600;
+	color: #ffc600;
 	display: inline-block;
 	background-size: cover;
 }
 .cart-footer::before {
 	content: "";
-	background-image: url("/../asset/svg/cart.svg");
+	background-image: url("../asset/svg/cart.svg");
 	width: 12px;
 	height: 9px;
-	background-color: #ffc600;
+	color: #ffc600;
 	display: inline-block;
 	background-size: cover;
 }
