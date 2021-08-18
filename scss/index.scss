@@ -1,0 +1,149 @@
+header::before {
+	color: #fff;
+	content: "";
+}
+header {
+	background-color: #f7df8a;
+	margin: 22px 140px;
+	background-size: 317px 1160px;
+	.header__logo {
+		display: inline-block;
+		margin: -18px 58px;
+	}
+	.navbar__user-link {
+		font-family: "Open Sans Light";
+		display: inline-block;
+		margin-top: 25px;
+		font-size: 15px;
+	}
+	.navbar__user-link.search-item {
+		margin-left: 60px;
+		.search {
+			background-color: #f7df8a;
+			border: none;
+		}
+		.search-img {
+			position: relative;
+			right: 229px;
+		}
+	}
+	.login-link {
+		margin-left: 391px;
+		background-image: url("../asset/svg/user.svg");
+		background-repeat: no-repeat;
+		padding-left: 15px;
+		background-position: 0;
+	}
+	.shape {
+		margin-left: 208px;
+		background-image: url("../asset/svg/shape.svg");
+		background-repeat: no-repeat;
+		padding-left: 15px;
+		background-position: 0;
+	}
+	.cart {
+		margin-left: 34px;
+		background-image: url("../asset/svg/cart.svg");
+		background-repeat: no-repeat;
+		padding-left: 15px;
+		background-position: 0;
+	}
+	.navbar__link-item {
+		font-family: "Gilroy";
+		display: inline-block;
+		margin-top: 25px;
+		font-size: 18px;
+		text-transform: uppercase;
+		.catalog {
+			margin-left: 25px;
+			margin-top: 45px;
+		}
+		.plus {
+			background-color: #f7df8a;
+			border: none;
+			opacity: 30%;
+		}
+		.delivery-nav {
+			margin-left: 440px;
+		}
+		.warranty-nav {
+			margin-left: 50px;
+		}
+		.contacts-nav {
+			margin-left: 135px;
+		}
+
+		.catalog-menu__list {
+			font-family: "Open Sans Light";
+			font-size: 15px;
+			text-transform: none;
+			display: none;
+			column-count: 3;
+			margin-right: -550px;
+			padding-top: 10px;
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.slider__items {
+	display: inline-block;
+	margin-left: 230px;
+	margin-right: 188px;
+	margin-top: 188px;
+	h3 {
+		font-family: "Gilroy";
+		font-size: 47px;
+		margin-left: 640px;
+	}
+	p {
+		margin-left: 640px;
+		font-size: 15px;
+		color: #464646;
+		padding-top: 15px;
+	}
+	.slider__btn {
+		font-family: "Gilroy";
+		text-transform: uppercase;
+		font-size: 17px;
+		margin-left: 760px;
+		padding: 0px 25px;
+		position: relative;
+		z-index: 1;
+	}
+	.slider__btn::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		height: 8px;
+		display: block;
+		background-color: #fad344;
+		z-index: -1;
+		left: 0px;
+	}
+	.slider__btn:hover::before {
+		height: 20px;
+	}
+	.slider__img {
+		width: 384px;
+		height: 486px;
+	}
+	.items__features {
+		display: inline-block;
+		span {
+			font-family: "Gilroy Light";
+			font-size: 36px;
+		}
+	}
+}
+.fitnes {
+	display: none;
+}
+.quadrocopter {
+	display: none;
+}

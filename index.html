@@ -13,77 +13,77 @@
 </head>
 
 <body>
-	
-	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo"><img class="main-header-logo"src="asset/image/logo/logo.png" alt="Логотип"></a>
-			<ul class="user-navigation">
-				<li class="nav-search-item" tabindex="0"><input class="search" type="search" placeholder="Поиск по сайту">
-				<button class="search-button">Найти</button>
+
+	<header>
+		<nav class="header__navbar">
+			<a class="header__logo"><img class="main-header-logo" src="asset/image/logo/logo.png" alt="Логотип"></a>
+			<ul class="navbar__userlist">
+				<li class="navbar__user-link search-item" tabindex="0"><input class="search" type="search"
+						placeholder="Поиск по сайту"><img src=".//asset/svg/search.svg" class="search-img">
+					<button class="search-button">Найти</button>
 				</li>
-				<li><a class="login-link" href="login.html">Войти</a></li>
-				<li><a class="shape" href="compare.html">Сравнить</a></li>
-				<li><a class="cart" href="basket.html">Корзина</a></li>
+				<li class="navbar__user-link"><a class="login-link" href="login.html">Войти</a></li>
+				<li class="navbar__user-link"><a class="shape" href="compare.html">Сравнить</a></li>
+				<li class="navbar__user-link"><a class="cart" href="basket.html">Корзина</a></li>
 			</ul>
-			<ul class="site-navigation">
-				<li><a class="catalog" href="catalog.html" class="btn">Каталог</a><button class="plus"><img src="asset/svg/plus.svg"
-							alt="Плюсик"></button>
-					<ul class="catalog-menu">
-						<li><a class="vr" href="vr.html"></a></li>
-						<li><a class="monopods" href="monopods.html"></a></li>
-						<li><a class="action-camera" href="action-camera.html"></a></li>
-						<li><a class="fitness-braclete" href="fitness-braclete.html"></a></li>
-						<li><a class="smart-watch" href="smart-watch.html"></a></li>
-						<li><a class="quadrocopters" href="quadrocopter.html"></a></li>
+			<ul class="navbar__link-item">
+				<li class="navbar__link-item"><a class="catalog" href="catalog.html" class="btn">Каталог товаров</a>
+					<button class="plus"><img src="asset/svg/plus.svg" alt="Плюсик"></button>
+					<ul class="catalog-menu__list">
+						<li class="catalog-menu__list "><a class="vr" href="#">Виртуальная реальность</a></li>
+						<li class="catalog-menu__list"><a class="monopods" href="#">Моноподы для селфи</a></li>
+						<li class="catalog-menu__list"><a class="action-camera" href="#">Экшн-камеры</a></li>
+						<li class="catalog-menu__list"> <a class="fitness-braclete" href="#">Фитнес-браслеты</a></li>
+						<li class="catalog-menu__list"><a class="smart-watch" href="#"></a>Умные часы</li>
+						<li class="catalog-menu__list"><a class="quadrocopters" href="#"></a>Квадрокоптеры</li>
 					</ul>
 				</li>
-				<li><a href="#delivery" class="delivery-navigation">Доставка</a></li>
-				<li><a href="#warranty" class="warranty-navigation">Гарантия</a></li>
-				<li><a href="#contacts" class="contacts-navigation">Контакты</a></li>
+				<li class="navbar__link-item"><a href="#delivery" class="delivery-nav">Доставка</a></li>
+				<li class="navbar__link-item"><a href="#warranty" class="warranty-nav">Гарантия</a></li>
+				<li class="navbar__link-item"><a href="#contacts" class="contacts-nav">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
+
 	<main>
 		<h1 class="visually-hidden">Самое главное в Device</h1>
 		<section class="slider">
 			<h2 class="visually-hidden">Слайдер со списком популярных товаров</h2>
 			<ul>
-				<li>
+				<li class="slider__items">
 					<h3>Делай селфи, <br> как Бен Стиллер! </h3>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и
 						весом
 						всего 5 килограмм.</p>
-					<a href="#" class="btn">Подробнее</a>
-					<ul class="btn">
-						<li> <span>8,5 м</span>Длина палки</li>
-						<li> <span>5 кг</span>Вес палки</li>
-						<li> <span>Карбон</span>Материал</li>
+					<a href="#" class="slider__btn btn">Подробнее</a>
+					<ul class="items__features">
+						<li class="items__features"> <span>8,5 м</span>Длина палки</li>
+						<li class="items__features"> <span>5 кг</span>Вес палки</li>
+						<li class="items__features"> <span>Карбон</span>Материал</li>
 					</ul>
-					<img src="asset/image/slider/slider-1.png" alt="Селфи-палка">
+					<img src="asset/image/slider/slider-1.png" class="slider__img" alt="Селфи-палка">
 					<button><img src="asset/svg/slider-button.svg" alt="slider-button"></button>
 				</li>
-				<li>
+				<li class="slider__items fitnes">
 					<h3>Худеем<br>Правильно!</h3>
 					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 					</p>
 					<a href="#" class="btn">Подробнее</a>
-					<ul>
-						<li><span>48 часов</span>Без подзарядки</li>
+					<ul class="items__features">
+						<li class="items__features"><span>48 часов</span>Без подзарядки</li>
 					</ul>
 					<img src="asset/image/slider/slider-2.png" alt="Фитнес-браслет">
 					<button><img src="asset/svg/slider-button-empty.svg" alt="slider-button"></button>
 				</li>
-				<li>
+				<li class="slider__items quadrocopter">
 					<h3>Порхает как бабочка,<br>жалит как пчела!</h3>
 					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
 						стандартную
 						камеру.</p>
 					<a href="#" class="btn">Подробнее</a>
-					<ul>
-						<li><span>800 м</span>Дальность полёта</li>
-						<li>
-							<span>50 м</span>Радиус поражения
-						</li>
+					<ul clasclass="items__features" s="items__features">
+						<li class="items__features"><span>800 м</span>Дальность полёта</li>
+						<li class="items__features"><span>50 м</span>Радиус поражения</li>
 					</ul>
 					<img src="asset/image/slider/slider-3.png" alt="Квадрокоптер">
 					<button><img src="asset/svg/slider-button-empty.svg" alt="slider-button"></button>
@@ -99,7 +99,7 @@
 						</figure>
 					</a></li>
 				<li><a href="monopods.html">
-						<figure><img class="products-png"  src="asset/image/popular/Group-4.png">
+						<figure><img class="products-png" src="asset/image/popular/Group-4.png">
 							<figcaption>Моноподы <br>для селфи</figcaption>
 						</figure>
 					</a></li>
@@ -168,28 +168,28 @@
 			</ul>
 		</section>
 		<div class="all-necessary">
-		<section class="information">
-			<h3>О нас</h3>
-			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-			<p>Мы можем доставить ваш товар в самый отдаленные точки России! Device работает со многими
-				траспортными
-				компаниями:</p>
-			<ul class="delivery-partners">
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-			</ul>
-			<a class="button btn" href="aboute">Подробнее о нас</a>
-		</section>
-		<section class="contacts" id="contacts">
-			<h3>Контакты</h3>
-			<p>Вы можете забрать свой товар сами, заехав в наш офис. Заодно, вы сможете проверить
-				работоспособность покупки.
-				Всякое бывает.</p>
-			<img src="asset/image/maps/map.png" alt="г.Москва, ул.Строителей, 15">
-			<button class="btn">Напишите нам</button>
-		</section>
-	</div>
+			<section class="information">
+				<h3>О нас</h3>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p>Мы можем доставить ваш товар в самый отдаленные точки России! Device работает со многими
+					траспортными
+					компаниями:</p>
+				<ul class="delivery-partners">
+					<li>Деловые Линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a class="button btn" href="aboute">Подробнее о нас</a>
+			</section>
+			<section class="contacts" id="contacts">
+				<h3>Контакты</h3>
+				<p>Вы можете забрать свой товар сами, заехав в наш офис. Заодно, вы сможете проверить
+					работоспособность покупки.
+					Всякое бывает.</p>
+				<img src="asset/image/maps/map.png" alt="г.Москва, ул.Строителей, 15">
+				<button class="btn">Напишите нам</button>
+			</section>
+		</div>
 	</main>
 	<footer>
 		<a class="footer-logo"><img src="asset/image/logo/logo-yellow.png" alt="Логотип"></a>
@@ -201,9 +201,9 @@
 			<li><a class="cart-footer" href="basket.html">Корзина</a></li>
 		</ul>
 		<p class="contacts-footer">+7(495)495-95-95</p>
-		<nav >
+		<nav>
 			<ul class="footer-btn">
-				<li><a href="#delivery" >Доставка</a></li>
+				<li><a href="#delivery">Доставка</a></li>
 				<li><a href="#warranty">Гарантия</a></li>
 				<li><a href="#contacts">Контакты</a></li>
 			</ul>
@@ -232,7 +232,8 @@
 			<button></button>
 		</form>
 	</article>
-	<article> <h3 class="visually-hidden">Большая карта</h3>
+	<article>
+		<h3 class="visually-hidden">Большая карта</h3>
 		<div><img class="map-big" src="asset/image/maps/map-big.png" alt="г.Москва, ул.Строителей, 15">
 			<button class="modal-close"></button>
 		</div>
