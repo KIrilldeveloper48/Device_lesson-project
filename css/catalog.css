@@ -1,0 +1,52 @@
+header {
+	background-color: #f0c52e;
+	background-size: 1160px 186px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+}
+h1 {
+	font-family: "Gilroy";
+	line-height: 48px;
+}
+legend {
+	font-family: "Gilroy";
+}
+.sorting-setting {
+	font-family: "Open Sans";
+}
+figcaption {
+	font-family: "Gilroy";
+}
+.filters li {
+	display: block;
+}
+.breadcrumbs a{
+	color:#aba9a7;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	text-decoration: underline;
+}
+.breadcrumbs-current {
+	color: #aba9a7;
+}
+fieldset{
+	border:none;
+}
+.filters legend {
+	font-family: "Gilroy";
+	font-weight: 800;
+	line-height: 24px;
+}
+.filters ul {
+	line-height: 39px;
+	
+}
+.filters-input:hover +label,
+.filters-input:focus +label{
+	color:#663d15;
+}
+.filters-input:disabled +label {
+	color: #000;
+	opacity: 0.5;
+}
