@@ -49,7 +49,14 @@
 
 body {
 	font-family: "Open Sans Light";
+	box-sizing: border-box;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 .communication-form {
 	display: none;
 }
